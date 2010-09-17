@@ -1,0 +1,1008 @@
+Model {
+  Name			  "networked"
+  Version		  4.00
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowStorageClass	  off
+  ExecutionOrder	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Thu May  7 12:49:04 2009"
+  Creator		  "anton"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "anton"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Thu Oct 15 14:00:16 2009"
+  ModelVersionFormat	  "1.%<AutoIncrement:82>"
+  ConfigurationManager	  "None"
+  SimParamPage		  "Solver"
+  StartTime		  "0.0"
+  StopTime		  "2"
+  SolverMode		  "Auto"
+  Solver		  "ode45"
+  RelTol		  "1e-3"
+  AbsTol		  "auto"
+  Refine		  "1"
+  MaxStep		  "auto"
+  MinStep		  "auto"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "auto"
+  MaxOrder		  5
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  LimitDataPoints	  on
+  MaxDataPoints		  "1000"
+  Decimation		  "1"
+  AlgebraicLoopMsg	  "warning"
+  MinStepSizeMsg	  "warning"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  SingleTaskRateTransMsg  "none"
+  MultiTaskRateTransMsg	  "error"
+  IntegerOverflowMsg	  "warning"
+  CheckForMatrixSingularity "none"
+  UnnecessaryDatatypeConvMsg "none"
+  Int32ToFloatConvMsg	  "warning"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  LinearizationMsg	  "none"
+  VectorMatrixConversionMsg "none"
+  SfunCompatibilityCheckMsg "none"
+  BlockPriorityViolationMsg "warning"
+  ArrayBoundsChecking	  "none"
+  ConsistencyChecking	  "none"
+  ZeroCross		  on
+  Profile		  off
+  SimulationMode	  "normal"
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWInlineParameters	  off
+  RTWRetainRTWFile	  off
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock off
+  OptimizeBlockIOStorage  on
+  BufferReuse		  on
+  ParameterPooling	  on
+  BlockReductionOpt	  on
+  RTWExpressionDepthLimit 5
+  BooleanDataType	  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "networked"
+    Location		    [470, 253, 1245, 801]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Constant
+      Name		      "BWShare"
+      Position		      [20, 395, 50, 425]
+      Value		      "0.3"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Clock
+      Name		      "Clock"
+      Position		      [25, 30, 45, 50]
+      DisplayTime	      off
+      Decimation	      "10"
+    }
+    Block {
+      BlockType		      TransportDelay
+      Name		      "Computational\nDelay"
+      Position		      [525, 370, 555, 400]
+      Orientation	      "left"
+      DelayTime		      "0.002"
+      InitialInput	      "0"
+      BufferSize	      "1024"
+      PadeOrder		      "0"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant"
+      Position		      [160, 268, 185, 292]
+      ShowName		      off
+      Value		      "1"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      TransferFcn
+      Name		      "DC Servo"
+      Position		      [450, 45, 520, 95]
+      Orientation	      "left"
+      DropShadow	      on
+      Numerator		      "[1000]"
+      Denominator	      "[1 1 0]"
+      AbsoluteTolerance	      "auto"
+      Realization	      "auto"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Discrete-time\nPD controller"
+      Ports		      [2, 1, 0, 1]
+      Position		      [535, 285, 615, 345]
+      Orientation	      "left"
+      DropShadow	      on
+      NamePlacement	      "alternate"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      on
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskPromptString	      "K|Td|N|h"
+      MaskStyleString	      "edit,edit,edit,edit"
+      MaskTunableValueString  "on,on,on,on"
+      MaskCallbackString      "|||"
+      MaskEnableString	      "on,on,on,on"
+      MaskVisibilityString    "on,on,on,on"
+      MaskToolTipString	      "on,on,on,on"
+      MaskVariables	      "K=@1;Td=@2;N=@3;h=@4;"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "1.0|0.04|100|0.010"
+      MaskVariableAliases     ",,,"
+      System {
+	Name			"Discrete-time\nPD controller"
+	Location		[434, 346, 1033, 671]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "r"
+	  Position		  [40, 98, 70, 112]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "y"
+	  Position		  [40, 193, 70, 207]
+	  Port			  "2"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  TriggerPort
+	  Name			  "Trigger"
+	  Ports			  []
+	  Position		  [285, 25, 305, 45]
+	  TriggerType		  "either"
+	  ShowOutputPort	  off
+	  OutputDataType	  "auto"
+	}
+	Block {
+	  BlockType		  UnitDelay
+	  Name			  "\n"
+	  Position		  [195, 181, 230, 219]
+	  X0			  "0"
+	  SampleTime		  "-1"
+	  RTWStateStorageClass	  "Auto"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "             "
+	  Position		  [315, 185, 345, 215]
+	  NamePlacement		  "alternate"
+	  Gain			  "K*Td*N/(Td+N*h)"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "              "
+	  Position		  [455, 250, 485, 280]
+	  Orientation		  "left"
+	  NamePlacement		  "alternate"
+	  Gain			  "Td/(Td+N*h)"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  UnitDelay
+	  Name			  "Dold"
+	  Position		  [480, 180, 515, 220]
+	  X0			  "0"
+	  SampleTime		  "-1"
+	  RTWStateStorageClass	  "Auto"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "K"
+	  Position		  [280, 90, 310, 120]
+	  Gain			  "K"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum1"
+	  Ports			  [2, 1]
+	  Position		  [430, 95, 450, 115]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|++"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum3"
+	  Ports			  [2, 1]
+	  Position		  [250, 190, 270, 210]
+	  NamePlacement		  "alternate"
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|+-"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum4"
+	  Ports			  [2, 1]
+	  Position		  [385, 190, 405, 210]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|++"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum5"
+	  Ports			  [2, 1]
+	  Position		  [125, 95, 145, 115]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|+-"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "u"
+	  Position		  [500, 98, 530, 112]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "Sum5"
+	  SrcPort		  1
+	  DstBlock		  "K"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "              "
+	  SrcPort		  1
+	  Points		  [-55, 0]
+	  DstBlock		  "Sum4"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "\n"
+	  SrcPort		  1
+	  DstBlock		  "Sum3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum4"
+	  SrcPort		  1
+	  Points		  [0, 0; 30, 0]
+	  Branch {
+	    DstBlock		    "Dold"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Sum1"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "Sum3"
+	  SrcPort		  1
+	  DstBlock		  "             "
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "             "
+	  SrcPort		  1
+	  DstBlock		  "Sum4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Dold"
+	  SrcPort		  1
+	  Points		  [35, 0; 0, 65]
+	  DstBlock		  "              "
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum1"
+	  SrcPort		  1
+	  DstBlock		  "u"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "r"
+	  SrcPort		  1
+	  DstBlock		  "Sum5"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "y"
+	  SrcPort		  1
+	  Points		  [0, 0; 60, 0]
+	  Branch {
+	    Points		    [0, 0]
+	    Branch {
+	      DstBlock		      "Sum5"
+	      DstPort		      2
+	    }
+	    Branch {
+	      DstBlock		      "\n"
+	      DstPort		      1
+	    }
+	  }
+	  Branch {
+	    Points		    [0, 65; 125, 0]
+	    DstBlock		    "Sum3"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "K"
+	  SrcPort		  1
+	  DstBlock		  "Sum1"
+	  DstPort		  1
+	}
+	Annotation {
+	  Position		  [211, 227]
+	  Text			  "yold"
+	}
+	Annotation {
+	  Position		  [492, 293]
+	  Text			  "Td/(Td+N*h)"
+	}
+	Annotation {
+	  Position		  [319, 229]
+	  Text			  "K*Td*N/(Td+N*h)"
+	}
+      }
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display"
+      Ports		      [1]
+      Position		      [85, 25, 175, 55]
+      Format		      "short"
+      Decimation	      "1"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From"
+      Position		      [630, 111, 660, 129]
+      ShowName		      off
+      CloseFcn		      "tagdialog Close"
+      GotoTag		      "r"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From1"
+      Position		      [630, 86, 660, 104]
+      ShowName		      off
+      CloseFcn		      "tagdialog Close"
+      GotoTag		      "y"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From2"
+      Position		      [630, 136, 660, 154]
+      ShowName		      off
+      CloseFcn		      "tagdialog Close"
+      GotoTag		      "u"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto"
+      Position		      [655, 250, 675, 275]
+      Orientation	      "up"
+      ShowName		      off
+      GotoTag		      "r"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto1"
+      Position		      [410, 25, 430, 50]
+      Orientation	      "up"
+      ShowName		      off
+      GotoTag		      "y"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto2"
+      Position		      [545, 25, 565, 50]
+      Orientation	      "up"
+      ShowName		      off
+      GotoTag		      "u"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      DiscretePulseGenerator
+      Name		      "Interference\nTrigger"
+      Position		      [95, 406, 125, 434]
+      PulseType		      "Time-based"
+      Amplitude		      "1"
+      Period		      "0.001"
+      PulseWidth	      "50"
+      PhaseDelay	      "0.006"
+      SampleTime	      "1"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Logic
+      Name		      "Logical\nOperator"
+      Ports		      [2, 1]
+      Position		      [155, 352, 185, 383]
+      Operator		      "AND"
+      Inputs		      "2"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux1"
+      Ports		      [2, 1]
+      Position		      [680, 83, 685, 132]
+      ShowName		      off
+      Inputs		      "2"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Network\nSchedule"
+      Ports		      [1]
+      Position		      [205, 157, 230, 183]
+      Floating		      off
+      Location		      [10, 287, 633, 672]
+      Open		      off
+      NumInputPorts	      "1"
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "xonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      Grid		      "on"
+      TimeRange		      "2"
+      YMin		      "1"
+      YMax		      "3.5"
+      SaveToWorkspace	      off
+      SaveName		      "nschedule1"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      SignalGenerator
+      Name		      "Reference"
+      Position		      [690, 285, 720, 315]
+      Orientation	      "left"
+      WaveForm		      "square"
+      Amplitude		      "1"
+      Frequency		      "1"
+      Units		      "Hertz"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      RelationalOperator
+      Name		      "Relational\nOperator"
+      Position		      [85, 342, 115, 373]
+      Operator		      "<"
+    }
+    Block {
+      BlockType		      DiscretePulseGenerator
+      Name		      "Sensor\nTrigger"
+      Position		      [340, 166, 370, 194]
+      PulseType		      "Time-based"
+      Amplitude		      "1"
+      Period		      "0.010"
+      PulseWidth	      "50"
+      PhaseDelay	      "0.006"
+      SampleTime	      "1"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator"
+      Position		      [325, 390, 345, 410]
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "TrueTime Network"
+      Ports		      [0, 1]
+      Position		      [70, 132, 170, 208]
+      DropShadow	      on
+      AncestorBlock	      "truetime_MH/TrueTime Network"
+      SourceBlock	      "truetime/TrueTime Network"
+      SourceType	      "Real-Time Network"
+      nwtype		      "CSMA/AMP (CAN)"
+      nwnbr		      "1"
+      nnodes		      "3"
+      rate		      "80000"
+      minsize		      "80"
+      lossprob		      "0"
+      seed		      "0"
+      bandwidths	      "[0.5 0.25 0.25]"
+      slotsize		      "80"
+      schedule		      "[1 2 1 3]"
+      memsize		      "80000"
+      buftype		      "Common buffer"
+      overflow		      "Retransmit"
+      dynSchedule	      "0"
+      miniSlotSize	      "0"
+      NIT		      "0"
+      QSortMode		      "FIFO"
+      sync		      "0"
+      irtSchedule	      "0"
+      nrtLength		      "0"
+      nodeGraph		      "0"
+      scheduleoutput	      on
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "TrueTime Receive\n(Actuator)"
+      Ports		      [0, 1]
+      Position		      [495, 136, 565, 194]
+      DropShadow	      on
+      AncestorBlock	      "truetime_R12/TrueTime Receive"
+      SourceBlock	      "truetime/TrueTime Receive"
+      SourceType	      ""
+      nwnbr		      "1"
+      receiver		      "2"
+      outdim		      "1"
+      triggeroutput	      off
+      senderoutput	      off
+      lengthoutput	      off
+      priorityoutput	      off
+      timestampoutput	      off
+      signalpoweroutput	      off
+      msgIDoutput	      off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "TrueTime Receive\n(Controller)"
+      Ports		      [0, 2]
+      Position		      [670, 340, 745, 400]
+      Orientation	      "left"
+      DropShadow	      on
+      AncestorBlock	      "truetime_R12/TrueTime Receive"
+      SourceBlock	      "truetime/TrueTime Receive"
+      SourceType	      ""
+      nwnbr		      "1"
+      receiver		      "3"
+      outdim		      "1"
+      triggeroutput	      on
+      senderoutput	      off
+      lengthoutput	      off
+      priorityoutput	      off
+      timestampoutput	      off
+      signalpoweroutput	      off
+      msgIDoutput	      off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "TrueTime Receive\n(Interference)"
+      Ports		      [0, 1]
+      Position		      [215, 373, 290, 427]
+      DropShadow	      on
+      AncestorBlock	      "truetime_R12/TrueTime Receive"
+      SourceBlock	      "truetime/TrueTime Receive"
+      SourceType	      ""
+      nwnbr		      "1"
+      receiver		      "1"
+      outdim		      "1"
+      triggeroutput	      off
+      senderoutput	      off
+      lengthoutput	      off
+      priorityoutput	      off
+      timestampoutput	      off
+      signalpoweroutput	      off
+      msgIDoutput	      off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "TrueTime Send"
+      Ports		      [2]
+      Position		      [395, 300, 470, 360]
+      Orientation	      "left"
+      DropShadow	      on
+      AncestorBlock	      "truetime_R12/TrueTime Send"
+      SourceBlock	      "truetime/TrueTime Send"
+      SourceType	      ""
+      trigger		      "either"
+      nwnbr		      "1"
+      sender		      "3"
+      indim		      "1"
+      recsource		      "internal"
+      receiver		      "2"
+      lengthsource	      "internal"
+      length		      "80"
+      priosource	      "internal"
+      prio		      "3"
+      msgIDsource	      "internal"
+      msgID		      "0"
+      dynamicSegment	      "dynamic"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "TrueTime Send\n(Interference)"
+      Ports		      [2]
+      Position		      [215, 265, 290, 325]
+      DropShadow	      on
+      AncestorBlock	      "truetime_R12/TrueTime Send"
+      SourceBlock	      "truetime/TrueTime Send"
+      SourceType	      ""
+      trigger		      "rising"
+      nwnbr		      "1"
+      sender		      "1"
+      indim		      "1"
+      recsource		      "internal"
+      receiver		      "1"
+      lengthsource	      "internal"
+      length		      "80"
+      priosource	      "internal"
+      prio		      "1"
+      msgIDsource	      "internal"
+      msgID		      "0"
+      dynamicSegment	      "dynamic"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "TrueTime Send\n(Sensor)"
+      Ports		      [2]
+      Position		      [405, 136, 475, 194]
+      DropShadow	      on
+      AncestorBlock	      "truetime_R12/TrueTime Send"
+      SourceBlock	      "truetime/TrueTime Send"
+      SourceType	      ""
+      trigger		      "rising"
+      nwnbr		      "1"
+      sender		      "2"
+      indim		      "1"
+      recsource		      "internal"
+      receiver		      "3"
+      lengthsource	      "internal"
+      length		      "80"
+      priosource	      "internal"
+      prio		      "2"
+      msgIDsource	      "internal"
+      msgID		      "0"
+      dynamicSegment	      "dynamic"
+    }
+    Block {
+      BlockType		      UniformRandomNumber
+      Name		      "Uniform \nRandom\nNumber"
+      Position		      [20, 319, 50, 351]
+      Minimum		      "0"
+      Maximum		      "1"
+      Seed		      "0"
+      SampleTime	      "0.001"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "r, y; u"
+      Ports		      [2]
+      Position		      [705, 99, 750, 141]
+      Floating		      off
+      Location		      [616, 76, 1213, 488]
+      Open		      off
+      NumInputPorts	      "2"
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "xonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+	axes2			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+	axes2			""
+      }
+      Grid		      "on"
+      TimeRange		      "2"
+      YMin		      "-2~-3"
+      YMax		      "2~3"
+      SaveToWorkspace	      off
+      SaveName		      "y"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Line {
+      SrcBlock		      "TrueTime Network"
+      SrcPort		      1
+      DstBlock		      "Network\nSchedule"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Mux1"
+      SrcPort		      1
+      DstBlock		      "r, y; u"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Clock"
+      SrcPort		      1
+      DstBlock		      "Display"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "From"
+      SrcPort		      1
+      DstBlock		      "Mux1"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "From1"
+      SrcPort		      1
+      DstBlock		      "Mux1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "From2"
+      SrcPort		      1
+      Points		      [25, 0]
+      DstBlock		      "r, y; u"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "DC Servo"
+      SrcPort		      1
+      Points		      [-25, 0]
+      Branch {
+	Points			[0, 0]
+	DstBlock		"Goto1"
+	DstPort			1
+      }
+      Branch {
+	Points			[-50, 0; 0, 80]
+	DstBlock		"TrueTime Send\n(Sensor)"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "TrueTime Receive\n(Actuator)"
+      SrcPort		      1
+      Points		      [30, 0; 0, -95; -45, 0]
+      Branch {
+	DstBlock		"DC Servo"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 0]
+	DstBlock		"Goto2"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Sensor\nTrigger"
+      SrcPort		      1
+      DstBlock		      "TrueTime Send\n(Sensor)"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Constant"
+      SrcPort		      1
+      DstBlock		      "TrueTime Send\n(Interference)"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "TrueTime Receive\n(Controller)"
+      SrcPort		      1
+      Points		      [-15, 0; 0, -25]
+      DstBlock		      "Discrete-time\nPD controller"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "TrueTime Receive\n(Controller)"
+      SrcPort		      2
+      Points		      [0, 0; -90, 0]
+      Branch {
+	DstBlock		"Discrete-time\nPD controller"
+	DstPort			trigger
+      }
+      Branch {
+	DstBlock		"Computational\nDelay"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Discrete-time\nPD controller"
+      SrcPort		      1
+      DstBlock		      "TrueTime Send"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Computational\nDelay"
+      SrcPort		      1
+      Points		      [-20, 0; 0, -40]
+      DstBlock		      "TrueTime Send"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Reference"
+      SrcPort		      1
+      Points		      [0, 0; -20, 0]
+      Branch {
+	DstBlock		"Discrete-time\nPD controller"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Goto"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "TrueTime Receive\n(Interference)"
+      SrcPort		      1
+      DstBlock		      "Terminator"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Uniform \nRandom\nNumber"
+      SrcPort		      1
+      Points		      [15, 0]
+      DstBlock		      "Relational\nOperator"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "BWShare"
+      SrcPort		      1
+      Points		      [15, 0]
+      DstBlock		      "Relational\nOperator"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Relational\nOperator"
+      SrcPort		      1
+      DstBlock		      "Logical\nOperator"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Interference\nTrigger"
+      SrcPort		      1
+      Points		      [5, 0; 0, -45]
+      DstBlock		      "Logical\nOperator"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Logical\nOperator"
+      SrcPort		      1
+      Points		      [5, 0; 0, -60]
+      DstBlock		      "TrueTime Send\n(Interference)"
+      DstPort		      2
+    }
+    Annotation {
+      Position		      [391, 506]
+      Text		      "TrueTime 2.0  Networked Control System\nCopyrig"
+"ht (c) 2009 Lund University\nWritten by Anton Cervin, Dan Henriksson and Mart"
+"in Ohlin,\nDepartment of Automatic Control LTH, Lund University, Sweden\nPlea"
+"se direct questions and bug reports to:  truetime@control.lth.se "
+    }
+  }
+}

@@ -1,0 +1,12 @@
+To use TrueTime, you must first compile the kernel files. This is done using
+
+>> make_truetime
+
+Since TrueTime is written in C++, you need to have a C++ compiler installed on
+your computer, and the mex command must be properly configured to use it. Do
+
+>> mex -setup
+
+to select an appropriate compiler. Gcc works under Linux and Mac OS Microsoft
+Visual Studio C++ can be configured to work with mex under Windows (see
+Mathworks home page for more help).

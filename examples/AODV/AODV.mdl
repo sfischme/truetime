@@ -1,0 +1,2339 @@
+Model {
+  Name			  "AODV"
+  Version		  4.00
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowStorageClass	  off
+  ExecutionOrder	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  InitFcn		  "initsim"
+  Created		  "Tue Jun 26 13:16:28 2001"
+  Creator		  "anton"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "anton"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Fri Sep 11 10:49:21 2009"
+  ModelVersionFormat	  "1.%<AutoIncrement:349>"
+  ConfigurationManager	  "none"
+  SimParamPage		  "Solver"
+  StartTime		  "0.0"
+  StopTime		  "20"
+  SolverMode		  "Auto"
+  Solver		  "ode45"
+  RelTol		  "1e-3"
+  AbsTol		  "auto"
+  Refine		  "1"
+  MaxStep		  "auto"
+  MinStep		  "auto"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "auto"
+  MaxOrder		  5
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  LimitDataPoints	  on
+  MaxDataPoints		  "1000"
+  Decimation		  "1"
+  AlgebraicLoopMsg	  "warning"
+  MinStepSizeMsg	  "warning"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  SingleTaskRateTransMsg  "none"
+  MultiTaskRateTransMsg	  "error"
+  IntegerOverflowMsg	  "warning"
+  CheckForMatrixSingularity "none"
+  UnnecessaryDatatypeConvMsg "none"
+  Int32ToFloatConvMsg	  "warning"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  LinearizationMsg	  "none"
+  VectorMatrixConversionMsg "none"
+  SfunCompatibilityCheckMsg "none"
+  BlockPriorityViolationMsg "warning"
+  ArrayBoundsChecking	  "none"
+  ConsistencyChecking	  "none"
+  ZeroCross		  on
+  Profile		  off
+  SimulationMode	  "normal"
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWOptions		  "-aEnforceIntegerDowncast=1 -aFoldNonRolledExpr=1 -a"
+"InlineInvariantSignals=0 -aInlineParameters=0 -aLocalBlockOutputs=1 -aRollThr"
+"eshold=5 -aGenerateReport=0 -aGenCodeOnly=0 -aRTWVerbose=1 -aIncludeHyperlink"
+"InReport=0 -aLaunchReport=0 -aForceParamTrailComments=0 -aGenerateComments=1 "
+"-aIgnoreCustomStorageClasses=1 -aIncHierarchyInIds=0 -aMaxRTWIdLen=31 -aShowE"
+"liminatedStatements=0 -aPrefixModelToSubsysFcnNames=1 -aIncDataTypeInIds=0 -a"
+"InsertBlockDesc=0 -aSimulinkBlockComments=1 -aInlinedPrmAccess=\"Literals\"  "
+"-aSuppressErrorStatus=0 -aModelReferenceCompliant=1 -aSupportNonInlinedSFcns="
+"1 -aSupportContinuousTime=1 -aSupportComplex=1 -aSupportNonFinite=1 -aSupport"
+"AbsoluteTime=1 -aTargetPreCompLibLocation=\"\" -aTargetLibSuffix=\"\" -aTarge"
+"tFcnLib=\"ansi_tfl_tmw.mat\" -aMultiInstanceERTCode=0 -aLogVarNameModifier=\""
+"rt_\" -aERTFirstTimeCompliant=0 -aIsPILTarget=0 -aCombineOutputUpdateFcns=0 -"
+"aGenerateASAP2=0 -aGenerateTestInterfaces=0 -aGenerateSampleERTMain=0 -aGener"
+"ateFullHeader=1 -aUtilityFuncGeneration=\"Auto\" -aIncludeFileDelimiter=\"Aut"
+"o\" -aIncludeERTFirstTime=1 -aIncludeMdlTerminateFcn=1 -aPurelyIntegerCode=0 "
+"-aERTCustomFileBanners=0 -aRTWCAPIStates=0 -aRTWCAPIParams=0 -aRTWCAPISignals"
+"=0 -aMatFileLogging=1 -aGenFloatMathFcnCalls=\"ANSI_C\" -aExtModeMexFile=\"ex"
+"t_comm\" -aExtModeTransport=0 -aExtModeStaticAllocSize=1000000 -aExtModeTesti"
+"ng=0 -aExtModeStaticAlloc=0 -aExtMode=0  "
+  RTWInlineParameters	  off
+  RTWRetainRTWFile	  off
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock off
+  OptimizeBlockIOStorage  on
+  BufferReuse		  on
+  ParameterPooling	  on
+  BlockReductionOpt	  off
+  RTWExpressionDepthLimit 5
+  BooleanDataType	  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "AODV"
+    Location		    [644, 163, 1231, 945]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "portrait"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      SubSystem
+      Name		      "Animation"
+      Ports		      [2]
+      Position		      [225, 582, 300, 658]
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskPromptString	      "Number of Nodes|xMax|YMax|Update period|x0|y0"
+      MaskStyleString	      "edit,edit,edit,edit,edit,edit"
+      MaskTunableValueString  "on,on,on,on,on,on"
+      MaskCallbackString      "|||||"
+      MaskEnableString	      "on,on,on,on,on,on"
+      MaskVisibilityString    "on,on,on,on,on,on"
+      MaskToolTipString	      "on,on,on,on,on,on"
+      MaskVariables	      "numMotes=@1;xmax=@2;ymax=@3;ts=@4;x0=@5;y0=@6;"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "7|30|30|0.1|xPos|yPos"
+      MaskVariableAliases     ",,,,,"
+      System {
+	Name			"Animation"
+	Location		[505, 671, 728, 791]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "x"
+	  Position		  [20, 28, 50, 42]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "y"
+	  Position		  [20, 63, 50, 77]
+	  Port			  "2"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  "S-Function"
+	  Name			  "Mote Animation"
+	  Ports			  [1]
+	  Position		  [115, 37, 195, 73]
+	  DeleteFcn		  "if ~isempty(findobj('type','figure','name',"
+"'dblpend1 Animation'));close('dblpend1 Animation'); end;"
+	  FunctionName		  "moteanimation"
+	  Parameters		  "[numMotes ts xmax ymax] x0 y0"
+	  PortCounts		  "[]"
+	  SFunctionModules	  "''"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux"
+	  Ports			  [2, 1]
+	  Position		  [85, 36, 90, 74]
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	}
+	Line {
+	  SrcBlock		  "Mux"
+	  SrcPort		  1
+	  DstBlock		  "Mote Animation"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "y"
+	  SrcPort		  1
+	  Points		  [5, 0; 0, -5]
+	  DstBlock		  "Mux"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "x"
+	  SrcPort		  1
+	  Points		  [5, 0; 0, 10]
+	  DstBlock		  "Mux"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Clock
+      Name		      "Clock"
+      Position		      [50, 30, 70, 50]
+      DisplayTime	      off
+      Decimation	      "10"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display"
+      Ports		      [1]
+      Position		      [125, 25, 215, 55]
+      Format		      "short"
+      Decimation	      "1"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From41"
+      Position		      [45, 521, 70, 539]
+      ShowName		      off
+      CloseFcn		      "tagdialog Close"
+      GotoTag		      "x2"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From42"
+      Position		      [75, 536, 100, 554]
+      ShowName		      off
+      CloseFcn		      "tagdialog Close"
+      GotoTag		      "x3"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From43"
+      Position		      [45, 551, 70, 569]
+      ShowName		      off
+      CloseFcn		      "tagdialog Close"
+      GotoTag		      "x4"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From44"
+      Position		      [45, 641, 70, 659]
+      ShowName		      off
+      CloseFcn		      "tagdialog Close"
+      GotoTag		      "y2"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From45"
+      Position		      [75, 656, 100, 674]
+      ShowName		      off
+      CloseFcn		      "tagdialog Close"
+      GotoTag		      "y3"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From46"
+      Position		      [45, 671, 70, 689]
+      ShowName		      off
+      CloseFcn		      "tagdialog Close"
+      GotoTag		      "y4"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From53"
+      Position		      [75, 566, 100, 584]
+      ShowName		      off
+      CloseFcn		      "tagdialog Close"
+      GotoTag		      "x5"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From54"
+      Position		      [45, 581, 70, 599]
+      ShowName		      off
+      CloseFcn		      "tagdialog Close"
+      GotoTag		      "x6"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From55"
+      Position		      [75, 596, 100, 614]
+      ShowName		      off
+      CloseFcn		      "tagdialog Close"
+      GotoTag		      "x7"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From56"
+      Position		      [75, 686, 100, 704]
+      ShowName		      off
+      CloseFcn		      "tagdialog Close"
+      GotoTag		      "y5"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From57"
+      Position		      [45, 701, 70, 719]
+      ShowName		      off
+      CloseFcn		      "tagdialog Close"
+      GotoTag		      "y6"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From58"
+      Position		      [75, 716, 100, 734]
+      ShowName		      off
+      CloseFcn		      "tagdialog Close"
+      GotoTag		      "y7"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From66"
+      Position		      [75, 626, 100, 644]
+      ShowName		      off
+      CloseFcn		      "tagdialog Close"
+      GotoTag		      "y1"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From70"
+      Position		      [75, 506, 100, 524]
+      ShowName		      off
+      CloseFcn		      "tagdialog Close"
+      GotoTag		      "x1"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto1"
+      Position		      [185, 241, 210, 259]
+      ShowName		      off
+      GotoTag		      "y2"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto10"
+      Position		      [405, 201, 430, 219]
+      ShowName		      off
+      GotoTag		      "x5"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto11"
+      Position		      [405, 341, 430, 359]
+      ShowName		      off
+      GotoTag		      "y6"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto12"
+      Position		      [405, 301, 430, 319]
+      ShowName		      off
+      GotoTag		      "x6"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto13"
+      Position		      [405, 441, 430, 459]
+      ShowName		      off
+      GotoTag		      "y7"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto14"
+      Position		      [405, 401, 430, 419]
+      ShowName		      off
+      GotoTag		      "x7"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto2"
+      Position		      [185, 201, 210, 219]
+      ShowName		      off
+      GotoTag		      "x2"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto3"
+      Position		      [185, 341, 210, 359]
+      ShowName		      off
+      GotoTag		      "y3"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto4"
+      Position		      [185, 301, 210, 319]
+      ShowName		      off
+      GotoTag		      "x3"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto5"
+      Position		      [185, 441, 210, 459]
+      ShowName		      off
+      GotoTag		      "y4"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto6"
+      Position		      [185, 401, 210, 419]
+      ShowName		      off
+      GotoTag		      "x4"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto7"
+      Position		      [405, 241, 430, 259]
+      ShowName		      off
+      GotoTag		      "y5"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto8"
+      Position		      [185, 141, 210, 159]
+      ShowName		      off
+      GotoTag		      "y1"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto9"
+      Position		      [185, 101, 210, 119]
+      ShowName		      off
+      GotoTag		      "x1"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux1"
+      Ports		      [7, 1]
+      Position		      [160, 633, 165, 727]
+      ShowName		      off
+      Inputs		      "7"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux3"
+      Ports		      [7, 1]
+      Position		      [160, 513, 165, 607]
+      ShowName		      off
+      Inputs		      "7"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Network Schedule"
+      Ports		      [1]
+      Position		      [505, 607, 530, 633]
+      Floating		      off
+      Location		      [6, 408, 1030, 967]
+      Open		      off
+      NumInputPorts	      "1"
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "xonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      Grid		      "on"
+      TimeRange		      "0.5"
+      YMin		      "0.8"
+      YMax		      "10.7"
+      SaveToWorkspace	      off
+      SaveName		      "nschedule1"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Node 1"
+      Ports		      [0, 2]
+      Position		      [50, 92, 150, 168]
+      BackgroundColor	      "magenta"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "MOTE"
+      MaskPromptString	      "NodeNbr"
+      MaskStyleString	      "edit"
+      MaskTunableValueString  "on"
+      MaskEnableString	      "on"
+      MaskVisibilityString    "on"
+      MaskToolTipString	      "on"
+      MaskVariables	      "nodeNbr=@1;"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "1"
+      System {
+	Name			"Node 1"
+	Location		[654, 800, 1099, 1061]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Integrator
+	  Name			  "\n"
+	  Ports			  [1, 1]
+	  Position		  [210, 140, 240, 170]
+	  Orientation		  "left"
+	  ExternalReset		  "none"
+	  InitialConditionSource  "internal"
+	  InitialCondition	  "yPos(nodeNbr)"
+	  LimitOutput		  off
+	  UpperSaturationLimit	  "inf"
+	  LowerSaturationLimit	  "-inf"
+	  ShowSaturationPort	  off
+	  ShowStatePort		  off
+	  AbsoluteTolerance	  "auto"
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "\n  \n"
+	  Ports			  [1, 1]
+	  Position		  [210, 185, 240, 215]
+	  Orientation		  "left"
+	  ExternalReset		  "none"
+	  InitialConditionSource  "internal"
+	  InitialCondition	  "xPos(nodeNbr)"
+	  LimitOutput		  off
+	  UpperSaturationLimit	  "inf"
+	  LowerSaturationLimit	  "-inf"
+	  ShowSaturationPort	  off
+	  ShowStatePort		  off
+	  AbsoluteTolerance	  "auto"
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux"
+	  Ports			  [1, 2]
+	  Position		  [375, 21, 380, 59]
+	  BackgroundColor	  "black"
+	  ShowName		  off
+	  Outputs		  "2"
+	  BusSelectionMode	  off
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux"
+	  Ports			  [2, 1]
+	  Position		  [115, 41, 120, 79]
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "Schedule"
+	  Ports			  [1]
+	  Position		  [330, 69, 355, 91]
+	  Floating		  off
+	  Location		  [83, 399, 897, 858]
+	  Open			  off
+	  NumInputPorts		  "1"
+	  TickLabels		  "on"
+	  ZoomMode		  "xonly"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "%<SignalLabel>"
+	  }
+	  Grid			  "on"
+	  TimeRange		  "3.5"
+	  YMin			  "1.8"
+	  YMax			  "3.7"
+	  SaveToWorkspace	  off
+	  SaveName		  "ScopeData"
+	  DataFormat		  "Array"
+	  LimitDataPoints	  off
+	  MaxDataPoints		  "5000"
+	  Decimation		  "1"
+	  SampleInput		  off
+	  SampleTime		  "0"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "TrueTime Kernel"
+	  Ports			  [1, 2]
+	  Position		  [170, 22, 285, 98]
+	  DropShadow		  on
+	  SourceBlock		  "truetime/TrueTime Kernel"
+	  SourceType		  ""
+	  sfun			  "node_init"
+	  args			  "nodeNbr"
+	  ninputsoutputs	  "[2 2]"
+	  ntriggers		  "0"
+	  trigtype		  "falling"
+	  nwnodenbr		  "nodeNbr"
+	  clockoffsetdrift	  "[0 0]"
+	  schedoutput		  on
+	  battery		  off
+	  poweroutput		  off
+	  label			  "1: 1"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "x"
+	  Position		  [150, 218, 180, 232]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "y"
+	  Position		  [150, 168, 180, 182]
+	  Port			  "2"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "\n  \n"
+	  SrcPort		  1
+	  Points		  [-70, 0]
+	  Branch {
+	    DstBlock		    "x"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [-100, 0; 0, -150]
+	    DstBlock		    "Mux"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "\n"
+	  SrcPort		  1
+	  Points		  [-70, 0]
+	  Branch {
+	    DstBlock		    "y"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [-70, 0; 0, -85]
+	    DstBlock		    "Mux"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  1
+	  Points		  [35, 0; 0, 170]
+	  DstBlock		  "\n  \n"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  2
+	  Points		  [10, 0; 0, 105]
+	  DstBlock		  "\n"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "TrueTime Kernel"
+	  SrcPort		  1
+	  DstBlock		  "Demux"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Mux"
+	  SrcPort		  1
+	  DstBlock		  "TrueTime Kernel"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "TrueTime Kernel"
+	  SrcPort		  2
+	  DstBlock		  "Schedule"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Node 2"
+      Ports		      [0, 2]
+      Position		      [50, 192, 150, 268]
+      BackgroundColor	      "magenta"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "MOTE"
+      MaskPromptString	      "NodeNbr"
+      MaskStyleString	      "edit"
+      MaskTunableValueString  "on"
+      MaskEnableString	      "on"
+      MaskVisibilityString    "on"
+      MaskToolTipString	      "on"
+      MaskVariables	      "nodeNbr=@1;"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "2"
+      System {
+	Name			"Node 2"
+	Location		[634, 670, 1079, 931]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Integrator
+	  Name			  "\n"
+	  Ports			  [1, 1]
+	  Position		  [210, 140, 240, 170]
+	  Orientation		  "left"
+	  ExternalReset		  "none"
+	  InitialConditionSource  "internal"
+	  InitialCondition	  "yPos(nodeNbr)"
+	  LimitOutput		  off
+	  UpperSaturationLimit	  "inf"
+	  LowerSaturationLimit	  "-inf"
+	  ShowSaturationPort	  off
+	  ShowStatePort		  off
+	  AbsoluteTolerance	  "auto"
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "\n  \n"
+	  Ports			  [1, 1]
+	  Position		  [210, 185, 240, 215]
+	  Orientation		  "left"
+	  ExternalReset		  "none"
+	  InitialConditionSource  "internal"
+	  InitialCondition	  "xPos(nodeNbr)"
+	  LimitOutput		  off
+	  UpperSaturationLimit	  "inf"
+	  LowerSaturationLimit	  "-inf"
+	  ShowSaturationPort	  off
+	  ShowStatePort		  off
+	  AbsoluteTolerance	  "auto"
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux"
+	  Ports			  [1, 2]
+	  Position		  [375, 21, 380, 59]
+	  BackgroundColor	  "black"
+	  ShowName		  off
+	  Outputs		  "2"
+	  BusSelectionMode	  off
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux"
+	  Ports			  [2, 1]
+	  Position		  [115, 41, 120, 79]
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "Schedule"
+	  Ports			  [1]
+	  Position		  [330, 69, 355, 91]
+	  Floating		  off
+	  Location		  [83, 399, 897, 858]
+	  Open			  off
+	  NumInputPorts		  "1"
+	  TickLabels		  "on"
+	  ZoomMode		  "xonly"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "%<SignalLabel>"
+	  }
+	  Grid			  "on"
+	  TimeRange		  "3.5"
+	  YMin			  "1.8"
+	  YMax			  "3.7"
+	  SaveToWorkspace	  off
+	  SaveName		  "ScopeData"
+	  DataFormat		  "Array"
+	  LimitDataPoints	  off
+	  MaxDataPoints		  "5000"
+	  Decimation		  "1"
+	  SampleInput		  off
+	  SampleTime		  "0"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "TrueTime Kernel"
+	  Ports			  [1, 2]
+	  Position		  [170, 22, 285, 98]
+	  DropShadow		  on
+	  SourceBlock		  "truetime/TrueTime Kernel"
+	  SourceType		  ""
+	  sfun			  "node_init"
+	  args			  "nodeNbr"
+	  ninputsoutputs	  "[2 2]"
+	  ntriggers		  "0"
+	  trigtype		  "falling"
+	  nwnodenbr		  "nodeNbr"
+	  clockoffsetdrift	  "[0 0]"
+	  schedoutput		  on
+	  battery		  off
+	  poweroutput		  off
+	  label			  "1: 2"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "x"
+	  Position		  [150, 218, 180, 232]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "y"
+	  Position		  [150, 168, 180, 182]
+	  Port			  "2"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "TrueTime Kernel"
+	  SrcPort		  2
+	  DstBlock		  "Schedule"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Mux"
+	  SrcPort		  1
+	  DstBlock		  "TrueTime Kernel"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "TrueTime Kernel"
+	  SrcPort		  1
+	  DstBlock		  "Demux"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  2
+	  Points		  [10, 0; 0, 105]
+	  DstBlock		  "\n"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  1
+	  Points		  [35, 0; 0, 170]
+	  DstBlock		  "\n  \n"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "\n"
+	  SrcPort		  1
+	  Points		  [-70, 0]
+	  Branch {
+	    Points		    [-70, 0; 0, -85]
+	    DstBlock		    "Mux"
+	    DstPort		    2
+	  }
+	  Branch {
+	    DstBlock		    "y"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "\n  \n"
+	  SrcPort		  1
+	  Points		  [-70, 0]
+	  Branch {
+	    Points		    [-100, 0; 0, -150]
+	    DstBlock		    "Mux"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "x"
+	    DstPort		    1
+	  }
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Node 3"
+      Ports		      [0, 2]
+      Position		      [50, 292, 150, 368]
+      BackgroundColor	      "magenta"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "MOTE"
+      MaskPromptString	      "NodeNbr"
+      MaskStyleString	      "edit"
+      MaskTunableValueString  "on"
+      MaskEnableString	      "on"
+      MaskVisibilityString    "on"
+      MaskToolTipString	      "on"
+      MaskVariables	      "nodeNbr=@1;"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "3"
+      System {
+	Name			"Node 3"
+	Location		[634, 670, 1079, 931]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Integrator
+	  Name			  "\n"
+	  Ports			  [1, 1]
+	  Position		  [210, 140, 240, 170]
+	  Orientation		  "left"
+	  ExternalReset		  "none"
+	  InitialConditionSource  "internal"
+	  InitialCondition	  "yPos(nodeNbr)"
+	  LimitOutput		  off
+	  UpperSaturationLimit	  "inf"
+	  LowerSaturationLimit	  "-inf"
+	  ShowSaturationPort	  off
+	  ShowStatePort		  off
+	  AbsoluteTolerance	  "auto"
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "\n  \n"
+	  Ports			  [1, 1]
+	  Position		  [210, 185, 240, 215]
+	  Orientation		  "left"
+	  ExternalReset		  "none"
+	  InitialConditionSource  "internal"
+	  InitialCondition	  "xPos(nodeNbr)"
+	  LimitOutput		  off
+	  UpperSaturationLimit	  "inf"
+	  LowerSaturationLimit	  "-inf"
+	  ShowSaturationPort	  off
+	  ShowStatePort		  off
+	  AbsoluteTolerance	  "auto"
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux"
+	  Ports			  [1, 2]
+	  Position		  [375, 21, 380, 59]
+	  BackgroundColor	  "black"
+	  ShowName		  off
+	  Outputs		  "2"
+	  BusSelectionMode	  off
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux"
+	  Ports			  [2, 1]
+	  Position		  [115, 41, 120, 79]
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "Schedule"
+	  Ports			  [1]
+	  Position		  [330, 69, 355, 91]
+	  Floating		  off
+	  Location		  [83, 399, 897, 858]
+	  Open			  off
+	  NumInputPorts		  "1"
+	  TickLabels		  "on"
+	  ZoomMode		  "xonly"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "%<SignalLabel>"
+	  }
+	  Grid			  "on"
+	  TimeRange		  "3.5"
+	  YMin			  "1.8"
+	  YMax			  "3.7"
+	  SaveToWorkspace	  off
+	  SaveName		  "ScopeData"
+	  DataFormat		  "Array"
+	  LimitDataPoints	  off
+	  MaxDataPoints		  "5000"
+	  Decimation		  "1"
+	  SampleInput		  off
+	  SampleTime		  "0"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "TrueTime Kernel"
+	  Ports			  [1, 2]
+	  Position		  [170, 22, 285, 98]
+	  DropShadow		  on
+	  SourceBlock		  "truetime/TrueTime Kernel"
+	  SourceType		  ""
+	  sfun			  "node_init"
+	  args			  "nodeNbr"
+	  ninputsoutputs	  "[2 2]"
+	  ntriggers		  "0"
+	  trigtype		  "falling"
+	  nwnodenbr		  "nodeNbr"
+	  clockoffsetdrift	  "[0 0]"
+	  schedoutput		  on
+	  battery		  off
+	  poweroutput		  off
+	  label			  "1: 3"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "x"
+	  Position		  [150, 218, 180, 232]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "y"
+	  Position		  [150, 168, 180, 182]
+	  Port			  "2"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "\n  \n"
+	  SrcPort		  1
+	  Points		  [-70, 0]
+	  Branch {
+	    DstBlock		    "x"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [-100, 0; 0, -150]
+	    DstBlock		    "Mux"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "\n"
+	  SrcPort		  1
+	  Points		  [-70, 0]
+	  Branch {
+	    DstBlock		    "y"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [-70, 0; 0, -85]
+	    DstBlock		    "Mux"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  1
+	  Points		  [35, 0; 0, 170]
+	  DstBlock		  "\n  \n"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  2
+	  Points		  [10, 0; 0, 105]
+	  DstBlock		  "\n"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "TrueTime Kernel"
+	  SrcPort		  1
+	  DstBlock		  "Demux"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Mux"
+	  SrcPort		  1
+	  DstBlock		  "TrueTime Kernel"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "TrueTime Kernel"
+	  SrcPort		  2
+	  DstBlock		  "Schedule"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Node 4"
+      Ports		      [0, 2]
+      Position		      [50, 392, 150, 468]
+      BackgroundColor	      "magenta"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "MOTE"
+      MaskPromptString	      "NodeNbr"
+      MaskStyleString	      "edit"
+      MaskTunableValueString  "on"
+      MaskEnableString	      "on"
+      MaskVisibilityString    "on"
+      MaskToolTipString	      "on"
+      MaskVariables	      "nodeNbr=@1;"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "4"
+      System {
+	Name			"Node 4"
+	Location		[634, 670, 1079, 931]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Integrator
+	  Name			  "\n"
+	  Ports			  [1, 1]
+	  Position		  [210, 140, 240, 170]
+	  Orientation		  "left"
+	  ExternalReset		  "none"
+	  InitialConditionSource  "internal"
+	  InitialCondition	  "yPos(nodeNbr)"
+	  LimitOutput		  off
+	  UpperSaturationLimit	  "inf"
+	  LowerSaturationLimit	  "-inf"
+	  ShowSaturationPort	  off
+	  ShowStatePort		  off
+	  AbsoluteTolerance	  "auto"
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "\n  \n"
+	  Ports			  [1, 1]
+	  Position		  [210, 185, 240, 215]
+	  Orientation		  "left"
+	  ExternalReset		  "none"
+	  InitialConditionSource  "internal"
+	  InitialCondition	  "xPos(nodeNbr)"
+	  LimitOutput		  off
+	  UpperSaturationLimit	  "inf"
+	  LowerSaturationLimit	  "-inf"
+	  ShowSaturationPort	  off
+	  ShowStatePort		  off
+	  AbsoluteTolerance	  "auto"
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux"
+	  Ports			  [1, 2]
+	  Position		  [375, 21, 380, 59]
+	  BackgroundColor	  "black"
+	  ShowName		  off
+	  Outputs		  "2"
+	  BusSelectionMode	  off
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux"
+	  Ports			  [2, 1]
+	  Position		  [115, 41, 120, 79]
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "Schedule"
+	  Ports			  [1]
+	  Position		  [330, 69, 355, 91]
+	  Floating		  off
+	  Location		  [83, 399, 897, 858]
+	  Open			  off
+	  NumInputPorts		  "1"
+	  TickLabels		  "on"
+	  ZoomMode		  "xonly"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "%<SignalLabel>"
+	  }
+	  Grid			  "on"
+	  TimeRange		  "3.5"
+	  YMin			  "1.8"
+	  YMax			  "3.7"
+	  SaveToWorkspace	  off
+	  SaveName		  "ScopeData"
+	  DataFormat		  "Array"
+	  LimitDataPoints	  off
+	  MaxDataPoints		  "5000"
+	  Decimation		  "1"
+	  SampleInput		  off
+	  SampleTime		  "0"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "TrueTime Kernel"
+	  Ports			  [1, 2]
+	  Position		  [170, 22, 285, 98]
+	  DropShadow		  on
+	  SourceBlock		  "truetime/TrueTime Kernel"
+	  SourceType		  ""
+	  sfun			  "node_init"
+	  args			  "nodeNbr"
+	  ninputsoutputs	  "[2 2]"
+	  ntriggers		  "0"
+	  trigtype		  "falling"
+	  nwnodenbr		  "nodeNbr"
+	  clockoffsetdrift	  "[0 0]"
+	  schedoutput		  on
+	  battery		  off
+	  poweroutput		  off
+	  label			  "1: 4"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "x"
+	  Position		  [150, 218, 180, 232]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "y"
+	  Position		  [150, 168, 180, 182]
+	  Port			  "2"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "TrueTime Kernel"
+	  SrcPort		  2
+	  DstBlock		  "Schedule"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Mux"
+	  SrcPort		  1
+	  DstBlock		  "TrueTime Kernel"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "TrueTime Kernel"
+	  SrcPort		  1
+	  DstBlock		  "Demux"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  2
+	  Points		  [10, 0; 0, 105]
+	  DstBlock		  "\n"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  1
+	  Points		  [35, 0; 0, 170]
+	  DstBlock		  "\n  \n"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "\n"
+	  SrcPort		  1
+	  Points		  [-70, 0]
+	  Branch {
+	    Points		    [-70, 0; 0, -85]
+	    DstBlock		    "Mux"
+	    DstPort		    2
+	  }
+	  Branch {
+	    DstBlock		    "y"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "\n  \n"
+	  SrcPort		  1
+	  Points		  [-70, 0]
+	  Branch {
+	    Points		    [-100, 0; 0, -150]
+	    DstBlock		    "Mux"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "x"
+	    DstPort		    1
+	  }
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Node 5"
+      Ports		      [0, 2]
+      Position		      [270, 192, 370, 268]
+      BackgroundColor	      "magenta"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "MOTE"
+      MaskPromptString	      "NodeNbr"
+      MaskStyleString	      "edit"
+      MaskTunableValueString  "on"
+      MaskEnableString	      "on"
+      MaskVisibilityString    "on"
+      MaskToolTipString	      "on"
+      MaskVariables	      "nodeNbr=@1;"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "5"
+      System {
+	Name			"Node 5"
+	Location		[634, 670, 1079, 931]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Integrator
+	  Name			  "\n"
+	  Ports			  [1, 1]
+	  Position		  [210, 140, 240, 170]
+	  Orientation		  "left"
+	  ExternalReset		  "none"
+	  InitialConditionSource  "internal"
+	  InitialCondition	  "yPos(nodeNbr)"
+	  LimitOutput		  off
+	  UpperSaturationLimit	  "inf"
+	  LowerSaturationLimit	  "-inf"
+	  ShowSaturationPort	  off
+	  ShowStatePort		  off
+	  AbsoluteTolerance	  "auto"
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "\n  \n"
+	  Ports			  [1, 1]
+	  Position		  [210, 185, 240, 215]
+	  Orientation		  "left"
+	  ExternalReset		  "none"
+	  InitialConditionSource  "internal"
+	  InitialCondition	  "xPos(nodeNbr)"
+	  LimitOutput		  off
+	  UpperSaturationLimit	  "inf"
+	  LowerSaturationLimit	  "-inf"
+	  ShowSaturationPort	  off
+	  ShowStatePort		  off
+	  AbsoluteTolerance	  "auto"
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux"
+	  Ports			  [1, 2]
+	  Position		  [375, 21, 380, 59]
+	  BackgroundColor	  "black"
+	  ShowName		  off
+	  Outputs		  "2"
+	  BusSelectionMode	  off
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux"
+	  Ports			  [2, 1]
+	  Position		  [115, 41, 120, 79]
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "Schedule"
+	  Ports			  [1]
+	  Position		  [330, 69, 355, 91]
+	  Floating		  off
+	  Location		  [83, 399, 897, 858]
+	  Open			  off
+	  NumInputPorts		  "1"
+	  TickLabels		  "on"
+	  ZoomMode		  "xonly"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "%<SignalLabel>"
+	  }
+	  Grid			  "on"
+	  TimeRange		  "3.5"
+	  YMin			  "1.8"
+	  YMax			  "3.7"
+	  SaveToWorkspace	  off
+	  SaveName		  "ScopeData"
+	  DataFormat		  "Array"
+	  LimitDataPoints	  off
+	  MaxDataPoints		  "5000"
+	  Decimation		  "1"
+	  SampleInput		  off
+	  SampleTime		  "0"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "TrueTime Kernel"
+	  Ports			  [1, 2]
+	  Position		  [170, 22, 285, 98]
+	  DropShadow		  on
+	  SourceBlock		  "truetime/TrueTime Kernel"
+	  SourceType		  ""
+	  sfun			  "node_init"
+	  args			  "nodeNbr"
+	  ninputsoutputs	  "[2 2]"
+	  ntriggers		  "0"
+	  trigtype		  "falling"
+	  nwnodenbr		  "nodeNbr"
+	  clockoffsetdrift	  "[0 0]"
+	  schedoutput		  on
+	  battery		  off
+	  poweroutput		  off
+	  label			  "1: 5"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "x"
+	  Position		  [150, 218, 180, 232]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "y"
+	  Position		  [150, 168, 180, 182]
+	  Port			  "2"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "\n  \n"
+	  SrcPort		  1
+	  Points		  [-70, 0]
+	  Branch {
+	    DstBlock		    "x"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [-100, 0; 0, -150]
+	    DstBlock		    "Mux"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "\n"
+	  SrcPort		  1
+	  Points		  [-70, 0]
+	  Branch {
+	    DstBlock		    "y"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [-70, 0; 0, -85]
+	    DstBlock		    "Mux"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  1
+	  Points		  [35, 0; 0, 170]
+	  DstBlock		  "\n  \n"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  2
+	  Points		  [10, 0; 0, 105]
+	  DstBlock		  "\n"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "TrueTime Kernel"
+	  SrcPort		  1
+	  DstBlock		  "Demux"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Mux"
+	  SrcPort		  1
+	  DstBlock		  "TrueTime Kernel"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "TrueTime Kernel"
+	  SrcPort		  2
+	  DstBlock		  "Schedule"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Node 6"
+      Ports		      [0, 2]
+      Position		      [270, 292, 370, 368]
+      BackgroundColor	      "magenta"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "MOTE"
+      MaskPromptString	      "NodeNbr"
+      MaskStyleString	      "edit"
+      MaskTunableValueString  "on"
+      MaskEnableString	      "on"
+      MaskVisibilityString    "on"
+      MaskToolTipString	      "on"
+      MaskVariables	      "nodeNbr=@1;"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "6"
+      System {
+	Name			"Node 6"
+	Location		[634, 670, 1079, 931]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Integrator
+	  Name			  "\n"
+	  Ports			  [1, 1]
+	  Position		  [210, 140, 240, 170]
+	  Orientation		  "left"
+	  ExternalReset		  "none"
+	  InitialConditionSource  "internal"
+	  InitialCondition	  "yPos(nodeNbr)"
+	  LimitOutput		  off
+	  UpperSaturationLimit	  "inf"
+	  LowerSaturationLimit	  "-inf"
+	  ShowSaturationPort	  off
+	  ShowStatePort		  off
+	  AbsoluteTolerance	  "auto"
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "\n  \n"
+	  Ports			  [1, 1]
+	  Position		  [210, 185, 240, 215]
+	  Orientation		  "left"
+	  ExternalReset		  "none"
+	  InitialConditionSource  "internal"
+	  InitialCondition	  "xPos(nodeNbr)"
+	  LimitOutput		  off
+	  UpperSaturationLimit	  "inf"
+	  LowerSaturationLimit	  "-inf"
+	  ShowSaturationPort	  off
+	  ShowStatePort		  off
+	  AbsoluteTolerance	  "auto"
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux"
+	  Ports			  [1, 2]
+	  Position		  [375, 21, 380, 59]
+	  BackgroundColor	  "black"
+	  ShowName		  off
+	  Outputs		  "2"
+	  BusSelectionMode	  off
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux"
+	  Ports			  [2, 1]
+	  Position		  [115, 41, 120, 79]
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "Schedule"
+	  Ports			  [1]
+	  Position		  [330, 69, 355, 91]
+	  Floating		  off
+	  Location		  [83, 399, 897, 858]
+	  Open			  off
+	  NumInputPorts		  "1"
+	  TickLabels		  "on"
+	  ZoomMode		  "xonly"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "%<SignalLabel>"
+	  }
+	  Grid			  "on"
+	  TimeRange		  "3.5"
+	  YMin			  "1.8"
+	  YMax			  "3.7"
+	  SaveToWorkspace	  off
+	  SaveName		  "ScopeData"
+	  DataFormat		  "Array"
+	  LimitDataPoints	  off
+	  MaxDataPoints		  "5000"
+	  Decimation		  "1"
+	  SampleInput		  off
+	  SampleTime		  "0"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "TrueTime Kernel"
+	  Ports			  [1, 2]
+	  Position		  [170, 22, 285, 98]
+	  DropShadow		  on
+	  SourceBlock		  "truetime/TrueTime Kernel"
+	  SourceType		  ""
+	  sfun			  "node_init"
+	  args			  "nodeNbr"
+	  ninputsoutputs	  "[2 2]"
+	  ntriggers		  "0"
+	  trigtype		  "falling"
+	  nwnodenbr		  "nodeNbr"
+	  clockoffsetdrift	  "[0 0]"
+	  schedoutput		  on
+	  battery		  off
+	  poweroutput		  off
+	  label			  "1: 6"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "x"
+	  Position		  [150, 218, 180, 232]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "y"
+	  Position		  [150, 168, 180, 182]
+	  Port			  "2"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "TrueTime Kernel"
+	  SrcPort		  2
+	  DstBlock		  "Schedule"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Mux"
+	  SrcPort		  1
+	  DstBlock		  "TrueTime Kernel"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "TrueTime Kernel"
+	  SrcPort		  1
+	  DstBlock		  "Demux"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  2
+	  Points		  [10, 0; 0, 105]
+	  DstBlock		  "\n"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  1
+	  Points		  [35, 0; 0, 170]
+	  DstBlock		  "\n  \n"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "\n"
+	  SrcPort		  1
+	  Points		  [-70, 0]
+	  Branch {
+	    Points		    [-70, 0; 0, -85]
+	    DstBlock		    "Mux"
+	    DstPort		    2
+	  }
+	  Branch {
+	    DstBlock		    "y"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "\n  \n"
+	  SrcPort		  1
+	  Points		  [-70, 0]
+	  Branch {
+	    Points		    [-100, 0; 0, -150]
+	    DstBlock		    "Mux"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "x"
+	    DstPort		    1
+	  }
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Node 7"
+      Ports		      [0, 2]
+      Position		      [270, 392, 370, 468]
+      BackgroundColor	      "magenta"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "MOTE"
+      MaskPromptString	      "NodeNbr"
+      MaskStyleString	      "edit"
+      MaskTunableValueString  "on"
+      MaskEnableString	      "on"
+      MaskVisibilityString    "on"
+      MaskToolTipString	      "on"
+      MaskVariables	      "nodeNbr=@1;"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "7"
+      System {
+	Name			"Node 7"
+	Location		[634, 670, 1079, 931]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Integrator
+	  Name			  "\n"
+	  Ports			  [1, 1]
+	  Position		  [210, 140, 240, 170]
+	  Orientation		  "left"
+	  ExternalReset		  "none"
+	  InitialConditionSource  "internal"
+	  InitialCondition	  "yPos(nodeNbr)"
+	  LimitOutput		  off
+	  UpperSaturationLimit	  "inf"
+	  LowerSaturationLimit	  "-inf"
+	  ShowSaturationPort	  off
+	  ShowStatePort		  off
+	  AbsoluteTolerance	  "auto"
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "\n  \n"
+	  Ports			  [1, 1]
+	  Position		  [210, 185, 240, 215]
+	  Orientation		  "left"
+	  ExternalReset		  "none"
+	  InitialConditionSource  "internal"
+	  InitialCondition	  "xPos(nodeNbr)"
+	  LimitOutput		  off
+	  UpperSaturationLimit	  "inf"
+	  LowerSaturationLimit	  "-inf"
+	  ShowSaturationPort	  off
+	  ShowStatePort		  off
+	  AbsoluteTolerance	  "auto"
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux"
+	  Ports			  [1, 2]
+	  Position		  [375, 21, 380, 59]
+	  BackgroundColor	  "black"
+	  ShowName		  off
+	  Outputs		  "2"
+	  BusSelectionMode	  off
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux"
+	  Ports			  [2, 1]
+	  Position		  [115, 41, 120, 79]
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "Schedule"
+	  Ports			  [1]
+	  Position		  [330, 69, 355, 91]
+	  Floating		  off
+	  Location		  [83, 399, 897, 858]
+	  Open			  off
+	  NumInputPorts		  "1"
+	  TickLabels		  "on"
+	  ZoomMode		  "xonly"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "%<SignalLabel>"
+	  }
+	  Grid			  "on"
+	  TimeRange		  "3.5"
+	  YMin			  "1.8"
+	  YMax			  "3.7"
+	  SaveToWorkspace	  off
+	  SaveName		  "ScopeData"
+	  DataFormat		  "Array"
+	  LimitDataPoints	  off
+	  MaxDataPoints		  "5000"
+	  Decimation		  "1"
+	  SampleInput		  off
+	  SampleTime		  "0"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "TrueTime Kernel"
+	  Ports			  [1, 2]
+	  Position		  [170, 22, 285, 98]
+	  DropShadow		  on
+	  SourceBlock		  "truetime/TrueTime Kernel"
+	  SourceType		  ""
+	  sfun			  "node_init"
+	  args			  "nodeNbr"
+	  ninputsoutputs	  "[2 2]"
+	  ntriggers		  "0"
+	  trigtype		  "falling"
+	  nwnodenbr		  "nodeNbr"
+	  clockoffsetdrift	  "[0 0]"
+	  schedoutput		  on
+	  battery		  off
+	  poweroutput		  off
+	  label			  "1: 7"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "x"
+	  Position		  [150, 218, 180, 232]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "y"
+	  Position		  [150, 168, 180, 182]
+	  Port			  "2"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "\n  \n"
+	  SrcPort		  1
+	  Points		  [-70, 0]
+	  Branch {
+	    DstBlock		    "x"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [-100, 0; 0, -150]
+	    DstBlock		    "Mux"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "\n"
+	  SrcPort		  1
+	  Points		  [-70, 0]
+	  Branch {
+	    DstBlock		    "y"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [-70, 0; 0, -85]
+	    DstBlock		    "Mux"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  1
+	  Points		  [35, 0; 0, 170]
+	  DstBlock		  "\n  \n"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  2
+	  Points		  [10, 0; 0, 105]
+	  DstBlock		  "\n"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "TrueTime Kernel"
+	  SrcPort		  1
+	  DstBlock		  "Demux"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Mux"
+	  SrcPort		  1
+	  DstBlock		  "TrueTime Kernel"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "TrueTime Kernel"
+	  SrcPort		  2
+	  DstBlock		  "Schedule"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "TrueTime Wireless \nNetwork"
+      Ports		      [2, 1]
+      Position		      [360, 592, 455, 648]
+      DropShadow	      on
+      UserDataPersistent      on
+      UserData		      "DataTag0"
+      SourceBlock	      "truetime/TrueTime Wireless \nNetwork"
+      SourceType	      "Wireless Network"
+      nwtype		      "802.11b (WLAN)"
+      nwnbr		      "1"
+      nnodes		      "7"
+      rate		      "1e6"
+      minsize		      "24"
+      transpower	      "pow"
+      threshold		      "thres"
+      use_pathloss_function   "default"
+      pathloss		      "3.5"
+      acktimeout	      "0.00004"
+      retrylimit	      "5"
+      error_threshold	      "codethres"
+      lossprob		      "0"
+      seed		      "0"
+      scheduleoutput	      on
+      poweroutput	      off
+    }
+    Line {
+      SrcBlock		      "Clock"
+      SrcPort		      1
+      DstBlock		      "Display"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Node 1"
+      SrcPort		      1
+      DstBlock		      "Goto9"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Node 1"
+      SrcPort		      2
+      DstBlock		      "Goto8"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "From70"
+      SrcPort		      1
+      DstBlock		      "Mux3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "From41"
+      SrcPort		      1
+      DstBlock		      "Mux3"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "From42"
+      SrcPort		      1
+      DstBlock		      "Mux3"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "From43"
+      SrcPort		      1
+      DstBlock		      "Mux3"
+      DstPort		      4
+    }
+    Line {
+      Labels		      [0, 0]
+      SrcBlock		      "From53"
+      SrcPort		      1
+      DstBlock		      "Mux3"
+      DstPort		      5
+    }
+    Line {
+      SrcBlock		      "From54"
+      SrcPort		      1
+      DstBlock		      "Mux3"
+      DstPort		      6
+    }
+    Line {
+      SrcBlock		      "From55"
+      SrcPort		      1
+      DstBlock		      "Mux3"
+      DstPort		      7
+    }
+    Line {
+      SrcBlock		      "From66"
+      SrcPort		      1
+      DstBlock		      "Mux1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "From44"
+      SrcPort		      1
+      DstBlock		      "Mux1"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "From45"
+      SrcPort		      1
+      DstBlock		      "Mux1"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "From58"
+      SrcPort		      1
+      DstBlock		      "Mux1"
+      DstPort		      7
+    }
+    Line {
+      SrcBlock		      "From57"
+      SrcPort		      1
+      DstBlock		      "Mux1"
+      DstPort		      6
+    }
+    Line {
+      SrcBlock		      "From56"
+      SrcPort		      1
+      DstBlock		      "Mux1"
+      DstPort		      5
+    }
+    Line {
+      SrcBlock		      "From46"
+      SrcPort		      1
+      DstBlock		      "Mux1"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "Node 2"
+      SrcPort		      1
+      DstBlock		      "Goto2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Node 2"
+      SrcPort		      2
+      DstBlock		      "Goto1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Node 3"
+      SrcPort		      1
+      DstBlock		      "Goto4"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Node 3"
+      SrcPort		      2
+      DstBlock		      "Goto3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Node 4"
+      SrcPort		      1
+      DstBlock		      "Goto6"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Node 4"
+      SrcPort		      2
+      DstBlock		      "Goto5"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Node 5"
+      SrcPort		      1
+      DstBlock		      "Goto10"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Node 5"
+      SrcPort		      2
+      DstBlock		      "Goto7"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Node 6"
+      SrcPort		      1
+      DstBlock		      "Goto12"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Node 6"
+      SrcPort		      2
+      DstBlock		      "Goto11"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Node 7"
+      SrcPort		      1
+      DstBlock		      "Goto14"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Node 7"
+      SrcPort		      2
+      DstBlock		      "Goto13"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Mux3"
+      SrcPort		      1
+      Points		      [0, 0; 20, 0]
+      Branch {
+	Points			[0, 40]
+	DstBlock		"Animation"
+	DstPort			1
+      }
+      Branch {
+	Points			[140, 0; 0, 45]
+	DstBlock		"TrueTime Wireless \nNetwork"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Mux1"
+      SrcPort		      1
+      Points		      [0, 0; 20, 0]
+      Branch {
+	Points			[0, -40]
+	DstBlock		"Animation"
+	DstPort			2
+      }
+      Branch {
+	Points			[140, 0; 0, -45]
+	DstBlock		"TrueTime Wireless \nNetwork"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "TrueTime Wireless \nNetwork"
+      SrcPort		      1
+      DstBlock		      "Network Schedule"
+      DstPort		      1
+    }
+    Annotation {
+      Position		      [411, 76]
+      Text		      "TrueTime 2.0  Wireless Ad-hoc Routing Using AOD"
+"V\nCopyright (c) 2009 Lund University\nWritten by Anton Cervin, Dan Henriksso"
+"n and Martin Ohlin,\nDepartment of Automatic Control LTH, Lund University, Sw"
+"eden\nPlease direct questions and bug reports to:  truetime@control.lth.se "
+    }
+  }
+}
+MatData {
+  NumRecords		  1
+  DataRecord {
+    Tag			    DataTag0
+    Data		    "  %)30     .    : 0   8    (     0         %    "
+"\"     $    1     0         .    .     8    (    !@         %    \"     $    "
+"!     0         )    \"            / _#@   #@    &    \"     8         !0    "
+"@    !     0    $         \"0    @           #P/PX    X    !@    @    &      "
+"    4    (     0    $    !          D    (            '$ .    .     8    (   "
+" !@         %    \"     $    !     0         )    \"         \" A\"Y!#@   #@ "
+"   &    \"     8         !0    @    !     0    $         \"0    @            "
+"X0 X    X    !@    @    &          4    (     0    $    !          D    (    "
+"        (, .    .     8    (    !@         %    \"     $    !     0         )"
+"    \"            $C #@   $     &    \"     0         !0    @    !    !P    $"
+"         !     X   !D &4 9@!A '4 ; !T    #@   #@    &    \"     8         !0 "
+"   @    !     0    $         \"0    @            ,0 X    P    !@    @    $   "
+"       4    (               !          0         #@   #@    &    \"     8    "
+"     !0    @    !     0    $         \"0    @   #Q:..(M?@$/PX    X    !@    @"
+"    &          4    (     0    $    !          D    (            %$ .    .   "
+"  8    (    !@         %    \"     $    !     0         )    \"    +@>A>M1N)X"
+"_#@   #@    &    \"     8         !0    @    !     0    $         \"0    @   "
+"            X    X    !@    @    &          4    (     0    $    !          D"
+"    (               .    .     8    (    !@         %    \"     $    !     0 "
+"        )    \"            / _#@   #@    &    \"     8         !0    @    !  "
+"   0    $         \"0    @               "
+  }
+}

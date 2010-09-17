@@ -1,0 +1,590 @@
+Model {
+  Name			  "threeservos"
+  Version		  4.00
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowStorageClass	  off
+  ExecutionOrder	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  on
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  InitFcn		  "clear functions"
+  Created		  "Wed Nov  3 20:14:37 1999"
+  Creator		  "anton"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "anton"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Wed Sep  2 16:40:07 2009"
+  ModelVersionFormat	  "1.%<AutoIncrement:158>"
+  ConfigurationManager	  "none"
+  SimParamPage		  "Solver"
+  StartTime		  "0.0"
+  StopTime		  "1"
+  SolverMode		  "Auto"
+  Solver		  "ode45"
+  RelTol		  "1e-3"
+  AbsTol		  "auto"
+  Refine		  "1"
+  MaxStep		  "auto"
+  MinStep		  "auto"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "auto"
+  MaxOrder		  5
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  LimitDataPoints	  off
+  MaxDataPoints		  "1000"
+  Decimation		  "1"
+  AlgebraicLoopMsg	  "warning"
+  MinStepSizeMsg	  "warning"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  SingleTaskRateTransMsg  "none"
+  MultiTaskRateTransMsg	  "error"
+  IntegerOverflowMsg	  "warning"
+  CheckForMatrixSingularity "none"
+  UnnecessaryDatatypeConvMsg "none"
+  Int32ToFloatConvMsg	  "warning"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  LinearizationMsg	  "none"
+  VectorMatrixConversionMsg "none"
+  SfunCompatibilityCheckMsg "none"
+  BlockPriorityViolationMsg "warning"
+  ArrayBoundsChecking	  "none"
+  ConsistencyChecking	  "none"
+  ZeroCross		  on
+  Profile		  off
+  SimulationMode	  "normal"
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWInlineParameters	  off
+  RTWRetainRTWFile	  off
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "oneshot"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  off
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock off
+  OptimizeBlockIOStorage  on
+  BufferReuse		  on
+  ParameterPooling	  on
+  BlockReductionOpt	  off
+  RTWExpressionDepthLimit 5
+  BooleanDataType	  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "threeservos"
+    Location		    [514, 346, 1267, 888]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Clock
+      Name		      "Clock"
+      Position		      [45, 37, 70, 63]
+      DisplayTime	      off
+      Decimation	      "10"
+    }
+    Block {
+      BlockType		      TransferFcn
+      Name		      "DC Servo 1"
+      Position		      [470, 174, 540, 206]
+      Numerator		      "[1000]"
+      Denominator	      "[1 1 0]"
+      AbsoluteTolerance	      "auto"
+      Realization	      "auto"
+    }
+    Block {
+      BlockType		      TransferFcn
+      Name		      "DC Servo 2"
+      Position		      [470, 229, 540, 261]
+      Numerator		      "[1000]"
+      Denominator	      "[1 1 0]"
+      AbsoluteTolerance	      "auto"
+      Realization	      "auto"
+    }
+    Block {
+      BlockType		      TransferFcn
+      Name		      "DC Servo 3"
+      Position		      [470, 284, 540, 316]
+      Numerator		      "[1000]"
+      Denominator	      "[1 1 0]"
+      AbsoluteTolerance	      "auto"
+      Realization	      "auto"
+    }
+    Block {
+      BlockType		      Demux
+      Name		      "Demux"
+      Ports		      [1, 3]
+      Position		      [395, 165, 400, 325]
+      BackgroundColor	      "black"
+      ShowName		      off
+      Outputs		      "3"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display"
+      Ports		      [1]
+      Position		      [110, 35, 200, 65]
+      Format		      "short"
+      Decimation	      "1"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux"
+      Ports		      [4, 1]
+      Position		      [165, 169, 170, 361]
+      ShowName		      off
+      Inputs		      "4"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux1"
+      Ports		      [2, 1]
+      Position		      [630, 224, 635, 251]
+      ShowName		      off
+      Inputs		      "2"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux2"
+      Ports		      [2, 1]
+      Position		      [630, 279, 635, 306]
+      ShowName		      off
+      Inputs		      "2"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux3"
+      Ports		      [2, 1]
+      Position		      [630, 169, 635, 196]
+      ShowName		      off
+      Inputs		      "2"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Schedule"
+      Ports		      [1]
+      Position		      [335, 262, 375, 308]
+      Floating		      off
+      Location		      [19, 294, 831, 791]
+      Open		      off
+      NumInputPorts	      "1"
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "xonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      Grid		      "on"
+      TimeRange		      "1"
+      YMin		      "1"
+      YMax		      "3.5"
+      SaveToWorkspace	      on
+      SaveName		      "ry"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      SignalGenerator
+      Name		      "Signal\nGenerator"
+      Position		      [35, 175, 65, 205]
+      WaveForm		      "square"
+      Amplitude		      "1"
+      Frequency		      "1.5"
+      Units		      "Hertz"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "TrueTime Kernel"
+      Ports		      [1, 2]
+      Position		      [195, 227, 310, 303]
+      DropShadow	      on
+      UserDataPersistent      on
+      UserData		      "DataTag0"
+      SourceBlock	      "truetime/TrueTime Kernel"
+      SourceType	      ""
+      sfun		      "threeservos_init"
+      args		      "1"
+      ninputsoutputs	      "[4 3]"
+      ntriggers		      "0"
+      trigtype		      "falling"
+      nwnodenbr		      "[]"
+      clockoffsetdrift	      "[0 0]"
+      schedoutput	      on
+      battery		      off
+      poweroutput	      off
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "r,y"
+      Ports		      [3]
+      Position		      [680, 217, 720, 263]
+      Floating		      off
+      Location		      [265, 217, 879, 764]
+      Open		      off
+      NumInputPorts	      "3"
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+	axes2			"%<SignalLabel>"
+	axes3			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+	axes2			""
+	axes3			""
+      }
+      Grid		      "on"
+      TimeRange		      "1"
+      YMin		      "-2~-2~-2"
+      YMax		      "2~2~2"
+      SaveToWorkspace	      on
+      SaveName		      "ry1"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "u"
+      Ports		      [3]
+      Position		      [409, 115, 451, 160]
+      Orientation	      "up"
+      Floating		      off
+      Location		      [517, 250, 1223, 819]
+      Open		      off
+      NumInputPorts	      "3"
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+	axes2			"%<SignalLabel>"
+	axes3			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+	axes2			""
+	axes3			""
+      }
+      Grid		      "on"
+      TimeRange		      "1"
+      YMin		      "-2~-5~-5"
+      YMax		      "2~5~5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Line {
+      SrcBlock		      "Clock"
+      SrcPort		      1
+      DstBlock		      "Display"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Signal\nGenerator"
+      SrcPort		      1
+      Points		      [0, 0; 30, 0]
+      Branch {
+	Points			[0, 220; 500, 0; 0, -235]
+	Branch {
+	  Points		  [0, 55]
+	  Branch {
+	    DstBlock		    "Mux1"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 55]
+	    DstBlock		    "Mux2"
+	    DstPort		    1
+	  }
+	}
+	Branch {
+	  DstBlock		  "Mux3"
+	  DstPort		  1
+	}
+      }
+      Branch {
+	DstBlock		"Mux"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Demux"
+      SrcPort		      2
+      Points		      [0, 0; 25, 0]
+      Branch {
+	DstBlock		"DC Servo 2"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"u"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "Demux"
+      SrcPort		      3
+      Points		      [0, 0; 40, 0]
+      Branch {
+	DstBlock		"DC Servo 3"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"u"
+	DstPort			3
+      }
+    }
+    Line {
+      SrcBlock		      "DC Servo 1"
+      SrcPort		      1
+      Points		      [0, 0; 35, 0]
+      Branch {
+	DstBlock		"Mux3"
+	DstPort			2
+      }
+      Branch {
+	Points			[0, 210; -470, 0; 0, -160]
+	DstBlock		"Mux"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "DC Servo 2"
+      SrcPort		      1
+      Points		      [0, 0; 25, 0]
+      Branch {
+	DstBlock		"Mux1"
+	DstPort			2
+      }
+      Branch {
+	Points			[0, 145; -450, 0; 0, -100]
+	DstBlock		"Mux"
+	DstPort			3
+      }
+    }
+    Line {
+      SrcBlock		      "DC Servo 3"
+      SrcPort		      1
+      Points		      [0, 0; 15, 0]
+      Branch {
+	DstBlock		"Mux2"
+	DstPort			2
+      }
+      Branch {
+	Points			[0, 80; -430, 0; 0, -40]
+	DstBlock		"Mux"
+	DstPort			4
+      }
+    }
+    Line {
+      SrcBlock		      "Mux2"
+      SrcPort		      1
+      Points		      [20, 0; 0, -40]
+      DstBlock		      "r,y"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Mux"
+      SrcPort		      1
+      DstBlock		      "TrueTime Kernel"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "TrueTime Kernel"
+      SrcPort		      1
+      DstBlock		      "Demux"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Mux1"
+      SrcPort		      1
+      DstBlock		      "r,y"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Mux3"
+      SrcPort		      1
+      Points		      [5, 0; 0, 40]
+      DstBlock		      "r,y"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Demux"
+      SrcPort		      1
+      Points		      [0, 0; 10, 0]
+      Branch {
+	DstBlock		"DC Servo 1"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"u"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "TrueTime Kernel"
+      SrcPort		      2
+      DstBlock		      "Schedule"
+      DstPort		      1
+    }
+    Annotation {
+      Position		      [153, 442]
+      HorizontalAlignment     "left"
+      VerticalAlignment	      "top"
+      Text		      "The TrueTime Kernel init function argument dete"
+"rmines the scheduling policy used:\n  1: Deadline-monotonic (DM) scheduling\n"
+"  2: Earliest-deadline-first (EDF) scheduling\n  3: EDF scheduling with deadl"
+"ine overrun handler that kills all jobs that miss their deadlines\n  4: EDF s"
+"cheduling with controller 3 executing inside a constant bandwidth server (CBS"
+")\n  5: EDF scheduling with job skips - a task that finishes late skips the n"
+"ext job"
+      DropShadow	      on
+    }
+    Annotation {
+      Position		      [396, 51]
+      Text		      "TrueTime 2.0  Task Scheduling and Control\nCopy"
+"right (c) 2009 Lund University\nWritten by Anton Cervin, Dan Henriksson and M"
+"artin Ohlin,\nDepartment of Automatic Control LTH, Lund University, Sweden\nP"
+"lease direct questions and bug reports to:  truetime@control.lth.se "
+    }
+  }
+}
+MatData {
+  NumRecords		  1
+  DataRecord {
+    Tag			    DataTag0
+    Data		    "  %)30     .    R (   8    (     0         %    "
+"\"     $    *     0         .    4     8    (    !          %    \"     $    "
+"0     0         $    (    '0 : !R &4 90!S &4 <@!V &\\ <P!? &D ;@!I '0 #@   #@"
+"    &    \"     8         !0    @    !     0    $         \"0    @           "
+"#P/PX   !     !@    @    &          4    (     0    (    !          D    0   "
+"         $$         (0 X    X    !@    @    &          4    (     0    $    !"
+"          D    (               .    .     8    (    !@         %    \"     $ "
+"   !     0         )    \"             ! #@   #     &    \"     8         !0 "
+"   @               $         \"0         .    0     8    (    !@         %   "
+" \"     $    \"     0         )    $                          .    .     8   "
+" (    !@         %    \"     $    !     0         )    \"            / _#@   "
+"#@    &    \"     8         !0    @    !     0    $         \"0    @         "
+"      X    X    !@    @    &          4    (     0    $    !          D    ( "
+"              "
+  }
+}
