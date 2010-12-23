@@ -9,4 +9,4 @@ Other Changes:
 ttNCM.cpp has been modified to use 2 inputs now and initializing network number during simulation runs.
 
 Bugs Encountered:
-In truetime, there is a parameter, nextHit. This parameter speicifies when the next data transfer should happen. It seems in the truetime block, this parameter is not initialized. Hence, sometimes it takes some garbage values and the simulation does not run as expected. To fix this temporaily, within the NCM.cpp file, this parameter is updated at every run time. 
+In truetime, there is a parameter, nextHit. This parameter speicifies when the next data transfer should happen. It seems in the truetime block, this parameter is not initialized. Hence, sometimes it takes some garbage values and the simulation does not run as expected. To fix this temporaily, within the ttNCM.cpp file, this parameter is updated at every run time. 
